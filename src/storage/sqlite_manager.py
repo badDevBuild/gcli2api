@@ -89,11 +89,11 @@ class SQLiteManager:
                     await db.execute("PRAGMA journal_mode=WAL")
                     await db.execute("PRAGMA foreign_keys=ON")
 
-                    # 检查并自动修复数据库结构
-                    await self._ensure_schema_compatibility(db)
-
-                    # 创建表
+                    # 创建表 (确保表存在)
                     await self._create_tables(db)
+
+                    # 检查并自动修复数据库结构 (确保字段完整)
+                    await self._ensure_schema_compatibility(db)
 
                     # 修复可能包含路径的凭证文件名
                     await self._repair_credential_filenames(db)
@@ -160,6 +160,7 @@ class SQLiteManager:
                 -- 状态字段
                 disabled INTEGER DEFAULT 0,
                 error_codes TEXT DEFAULT '[]',
+                error_messages TEXT DEFAULT '[]',
                 last_success REAL,
                 user_email TEXT,
 
@@ -189,6 +190,7 @@ class SQLiteManager:
                 -- 状态字段
                 disabled INTEGER DEFAULT 0,
                 error_codes TEXT DEFAULT '[]',
+                error_messages TEXT DEFAULT '[]',
                 last_success REAL,
                 user_email TEXT,
 
