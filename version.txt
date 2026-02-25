@@ -1,4 +1,4 @@
-full_hash=6b3863e77b57013b340ea50dfdae9bbb4a79deb4
-short_hash=6b3863e
-message=修正配置显示
-date=2026-02-11 21:41:29 +0800
+full_hash=5cb68349f003978398add8e9d364df5eef9b6fd1
+short_hash=5cb6834
+message=Update anti_truncation.py
+date=2026-02-25 17:34:45 +0800
