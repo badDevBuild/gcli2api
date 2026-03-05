@@ -1,4 +1,4 @@
-full_hash=5cb68349f003978398add8e9d364df5eef9b6fd1
-short_hash=5cb6834
-message=Update anti_truncation.py
-date=2026-02-25 17:34:45 +0800
+full_hash=35b72101debe5df917f2e3135eceb87b7f2ce33f
+short_hash=35b7210
+message=更新 termux-start.sh
+date=2026-03-05 08:54:32 +0800
