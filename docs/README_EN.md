@@ -6,11 +6,11 @@
 [![License: CNC-1.0](https://img.shields.io/badge/License-CNC--1.0-red.svg)](../LICENSE)
 [![Docker](https://img.shields.io/badge/docker-available-blue.svg)](https://github.com/su-kaka/gcli2api/pkgs/container/gcli2api)
 
-[中文](../README.md) | English
+[中文](../README.md) | English | [日本語](./README_JA.md)
 
 ## 🚀 Quick Deploy
 
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/97VMEF?referralCode=su-kaka)
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/97VMEF?referralCode=sukaka)
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/su-kaka/gcli2api)
 ---
 
@@ -870,7 +870,7 @@ In this mode, all `system` messages are converted to `user` messages, improving 
 
 Welcome to join the QQ group for discussion!
 
-**QQ Group: 937681997**
+**QQ Group: 1083250744**
 
 <img src="qq群.jpg" width="200" alt="QQ Group QR Code">
 

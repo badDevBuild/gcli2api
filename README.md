@@ -6,11 +6,11 @@
 [![License: CNC-1.0](https://img.shields.io/badge/License-CNC--1.0-red.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/docker-available-blue.svg)](https://github.com/su-kaka/gcli2api/pkgs/container/gcli2api)
 
-[English](docs/README_EN.md) | 中文
+[English](docs/README_EN.md) | 中文 | [日本語](docs/README_JA.md)
 
 ## 🚀 快速部署
 
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/97VMEF?referralCode=su-kaka)
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/97VMEF?referralCode=sukaka)
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/su-kaka/gcli2api)
 ---
 
@@ -870,7 +870,7 @@ export COMPATIBILITY_MODE=true
 
 欢迎加入 QQ 群交流讨论！
 
-**QQ 群号：937681997**
+**QQ 群号：1083250744**
 
 <img src="docs/qq群.jpg" width="200" alt="QQ群二维码">
 

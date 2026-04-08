@@ -4,6 +4,7 @@ Main Web Integration - Integrates all routers and modules
 """
 
 import asyncio
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Response
@@ -162,19 +163,15 @@ async def main():
     port = await get_server_port()
     host = await get_server_host()
 
+    workers = int(os.environ.get("WORKERS", 1))
+
     log.info("=" * 60)
     log.info("启动 GCLI2API")
     log.info("=" * 60)
     log.info(f"控制面板: http://127.0.0.1:{port}")
+    if workers > 1:
+        log.info(f"Worker 数量: {workers}")
     log.info("=" * 60)
-    log.info("API端点:")
-    log.info(f"   Geminicli (OpenAI格式): http://127.0.0.1:{port}/v1")
-    log.info(f"   Geminicli (Claude格式): http://127.0.0.1:{port}/v1")
-    log.info(f"   Geminicli (Gemini格式): http://127.0.0.1:{port}")
-    
-    log.info(f"   Antigravity (OpenAI格式): http://127.0.0.1:{port}/antigravity/v1")
-    log.info(f"   Antigravity (Claude格式): http://127.0.0.1:{port}/antigravity/v1")
-    log.info(f"   Antigravity (Gemini格式): http://127.0.0.1:{port}/antigravity")
 
     # 配置hypercorn
     config = Config()
@@ -182,6 +179,7 @@ async def main():
     config.accesslog = "-"
     config.errorlog = "-"
     config.loglevel = "INFO"
+    config.workers = workers
 
     # 设置连接超时
     config.keep_alive_timeout = 600  # 10分钟
