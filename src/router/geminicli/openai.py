@@ -258,7 +258,8 @@ async def chat_completions(
         processor = AntiTruncationStreamProcessor(
             stream_request_wrapper,
             anti_truncation_payload,
-            max_attempts
+            max_attempts,
+            enable_prefill_mode=True,
         )
 
         # 转换为 OpenAI 格式

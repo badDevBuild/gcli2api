@@ -24,7 +24,7 @@ def get_geminicli_user_agent(model: str = "") -> str:
 # 静态常量
 GEMINICLI_USER_AGENT = get_geminicli_user_agent()
 
-ANTIGRAVITY_USER_AGENT = "antigravity/2.15.8 (Windows; AMD64)"
+ANTIGRAVITY_USER_AGENT = "antigravity/1.22.2 windows/amd64"
 
 # OAuth Configuration - 标准模式
 CLIENT_ID = "681255809395-oo8ft2oprdrnp9e3aqf6av3hmdib135j.apps.googleusercontent.com"
@@ -51,22 +51,6 @@ TOKEN_URL = "https://oauth2.googleapis.com/token"
 
 # 回调服务器配置
 CALLBACK_HOST = "localhost"
-
-# ====================== Model Configuration ======================
-
-# Default Safety Settings for Google API
-DEFAULT_SAFETY_SETTINGS = [
-    {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_CIVIC_INTEGRITY", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_IMAGE_HATE", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_IMAGE_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_IMAGE_HARASSMENT", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_IMAGE_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-    {"category": "HARM_CATEGORY_JAILBREAK", "threshold": "BLOCK_NONE"},
-]
 
 # Model name lists for different features
 BASE_MODELS = [
